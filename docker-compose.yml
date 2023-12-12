@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend
+    build: /frontend
+    ports:
+      - '3000:3000'
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./frontend:/usr/src/app
+
